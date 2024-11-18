@@ -1,0 +1,58 @@
+@import "../../commons/Colors.css";
+h2,a{
+    color: var(--color-primario);
+
+}
+
+
+
+
+.Header-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 90%;
+    margin: 0 auto;
+    background-color: var(--bg-color-1-1-page);
+    flex-wrap: wrap;
+    
+    
+}
+
+@media (max-width: 629px) {
+    .Header-container {
+      justify-content: center; 
+    }
+  }
+
+
+.Header-Container-left-name{
+    color: var(--color-secundario);
+    text-align: center;
+}
+
+.Header-container-right{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+
+    
+}
+
+.Header-container-right-words{
+    font-size: .975rem;
+    line-height: 1.25rem;
+    flex-wrap: wrap;
+}
+
+.Header-container-right-words a{
+    text-decoration: none;
+    transition: color 0.5s ease; /* transición suave del color de fondo */
+}
+
+.Header-container-right-words a:hover{
+    color: var(--color-secundario);
+}
