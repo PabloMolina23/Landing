@@ -1,12 +1,14 @@
 import userInfo from "../../data/data";
 import "../Home/Home.css";
+import { useTranslation } from "react-i18next"; 
 
 
 const Home = () => {
+  const { t } = useTranslation("home");
   return (
     <div className="Home-container">
       <div className="Home-container-phrase">
-        <p>Let’s make magic happen!</p>
+        <p>{t("magicPhrase")}</p>
       </div>
 
       <div className="Home-container-description1">
@@ -17,9 +19,8 @@ const Home = () => {
       </div>
 
       <div className="Home-container-description2">
-        "I’m passionate about technology and aim to become a Full Stack
-        Developer. My goal is to start as a Junior Developer, learn, and grow in
-        the tech field."
+
+        {t("description")}
       </div>
 
       <div className="Home-container-routes">
@@ -29,7 +30,7 @@ const Home = () => {
         >
           <div className="circle">
             <div className="circle-image">
-              <img src="/figures/a.png" alt="" />
+              <img className="circle-image-c" src="/figures/c.png" alt="" />
             </div>
           </div>
         </a>
@@ -39,7 +40,7 @@ const Home = () => {
         >
           <div className="circle">
             <div className="circle-image">
-              <img src="/figures/a.png" alt="" />
+              <img className="circle-image-b" src="/figures/b.png" alt="" />
             </div>
           </div>
         </a>
@@ -50,7 +51,7 @@ const Home = () => {
         >
           <div className="circle">
             <div className="circle-image">
-              <img src="/figures/b.png" alt="" />
+              <img className="circle-image-a" src="/figures/a.png" alt="" />
             </div>
           </div>
         </a>

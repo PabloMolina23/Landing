@@ -1,8 +1,20 @@
 import "./Header.css"
+import { useTranslation } from "react-i18next";
 
 import userInfo from '../../data/data';
 
 const Header = ()=>{
+    const { t , i18n} = useTranslation(["menu"]);
+   
+        const changeLanguage = () => {
+            if (i18n.language === "es") {
+                i18n.changeLanguage("en"); 
+            } else {
+                i18n.changeLanguage("es"); 
+            }
+        };
+        
+    
 
 
 
@@ -13,11 +25,12 @@ const Header = ()=>{
         </div>
 
         <div className="Header-container-right">
-            <h2 className="Header-container-right-words"><a href="">Home</a></h2>
-            <h2 className="Header-container-right-words"><a href="">About</a></h2>
-            <h2 className="Header-container-right-words"><a href="">Projects</a></h2>
-            <h2 className="Header-container-right-words"><a href="">Skills</a></h2>
-            <h2 className="Header-container-right-words"><a href="">Contact</a></h2>
+            <h2 className="Header-container-right-words"><a href="">{t("home")}</a></h2>
+            <h2 className="Header-container-right-words"><a href="">{t("about")}</a></h2>
+            <h2 className="Header-container-right-words"><a href="">{t("projects")}</a></h2>
+            <h2 className="Header-container-right-words"><a href="">{t("skills")}</a></h2>
+            <h2 className="Header-container-right-words"><a href="">{t("contact")}</a></h2>
+            <button onClick={changeLanguage}>ES/EN</button>
         </div>
 
 

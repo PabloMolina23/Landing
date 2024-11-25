@@ -79,10 +79,11 @@
 .circle-image{
     min-height: 10px;
     min-width: 10px;
-    background-color: rgb(39, 72, 102);
     position: relative;
-    top: 50%;
-    left: 50%;
+    top: 30%;
+    left: 32%;
+
+    
 
     
     
@@ -90,4 +91,13 @@
     
 
 
+}
+
+.circle-image-a,
+.circle-image-b,
+.circle-image-c {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
 }

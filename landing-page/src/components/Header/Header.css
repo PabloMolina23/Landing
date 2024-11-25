@@ -46,6 +46,8 @@ h2,a{
     font-size: .975rem;
     line-height: 1.25rem;
     flex-wrap: wrap;
+    width: 5rem;
+    
 }
 
 .Header-container-right-words a{
